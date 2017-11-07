@@ -12,6 +12,8 @@ NBIOT_STM32L031.ewt
 NBIOT_STM32L031.ewd
 
 #屏蔽库文件中无用库文件
+stm32l0xx_hal_msp_template.c
+
 stm32l0xx_ll_adc.c
 stm32l0xx_ll_adc.h
 

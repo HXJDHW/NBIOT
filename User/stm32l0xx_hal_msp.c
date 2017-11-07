@@ -73,21 +73,20 @@
   * @param  None
   * @retval None
   */
-//void HAL_MspInit(void)
-//{
-//
-//}
+void HAL_MspInit(void)
+{
+    USART_GPIO_Init();
+}
 
 /**
   * @brief  DeInitializes the Global MSP.
   * @param  None  
   * @retval None
   */
-//void HAL_MspDeInit(void)
-//{
-//
-//
-//}
+void HAL_MspDeInit(void)
+{
+    USART_GPIO_DeInit();
+}
 
 /**
   * @}

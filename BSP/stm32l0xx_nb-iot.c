@@ -1,10 +1,14 @@
 /**
   ******************************************************************************
-  * @file    Templates/Inc/main.h 
+  * @file    stm32l0xx_nucleo.c
   * @author  MCD Application Team
-  * @version V1.8.0
+  * @version V2.1.0
   * @date    25-November-2016
-  * @brief   Header for main.c module
+  * @brief   This file provides set of firmware functions to manage:
+  *          - LEDs and push-button available on STM32L0XX-Nucleo Kit 
+  *            from STMicroelectronics
+  *          - LCD, joystick and microSD available on Adafruit 1.8" TFT LCD 
+  *            shield (reference ID 802)
   ******************************************************************************
   * @attention
   *
@@ -33,26 +37,77 @@
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
   ******************************************************************************
-  */
+  */ 
   
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MAIN_H
-#define __MAIN_H
-
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx_nb-iot.h"
-#include "NBIOT_GPIO.h"
-#include "stdio.h"
-#include "nbiot_usart.h"
+
+/** @addtogroup BSP
+  * @{
+  */ 
+
+/** @addtogroup STM32L0XX_NUCLEO
+  * @{
+  */   
+    
+/** @addtogroup STM32L0XX_NUCLEO_LOW_LEVEL 
+  * @brief This file provides set of firmware functions to manage Leds and push-button
+  *        available on STM32L0XX-Nucleo Kit from STMicroelectronics.
+  * @{
+  */ 
+
+/** @defgroup STM32L0XX_NUCLEO_LOW_LEVEL_Private_TypesDefinitions Private Types Definitions
+  * @{
+  */ 
+/**
+  * @}
+  */ 
 
 
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
+/** @defgroup STM32L0XX_NUCLEO_LOW_LEVEL_Private_Defines Private Defines
+  * @{
+  */ 
 
 
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
 
-#endif /* __MAIN_H */
 
+
+/**
+  * @}
+  */ 
+
+const IO_Item MeterUartIOItem[]={0
+};
+
+
+
+
+
+
+
+
+
+
+/**
+  * @brief  Initialize SPI HAL.
+  * @retval None
+  */
+
+
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */    
+
+/**
+  * @}
+  */ 
+    
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

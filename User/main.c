@@ -81,8 +81,13 @@ int main(void)
     SystemClock_Config();
     
     /* Add your application code here*/
-
+    
+    /* 串行口初始化 */
+    USART2_Init();
+    
     /* Output a message on Hyperterminal using printf function */
+    printf("\n\r UART Printf Example: retarget the C library printf function to the UART\n\r");
+    printf("** Test finished successfully. ** \n\r");
 
     /* Infinite loop */
     while (1)
